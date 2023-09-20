@@ -134,9 +134,9 @@
   .allmenu .allnav{width:100%;position:relative;height:auto}
   .allnav .nav-main{width:100%;padding:6rem 4rem}
   .allnav .nav-main li{padding-bottom:2rem}
-  .allnav .nav-main a{font-size:6rem}
+  .allnav .nav-main a{font-size:4.5rem}
   .allmenu .allfoot{width:100%;position:relative;height:auto;margin-top:auto;-webkit-animation:ani-allnav-in 400ms 600ms cubic-bezier(.3,.73,.45,1) both;animation:ani-allnav-in 400ms 600ms cubic-bezier(.3,.73,.45,1) both}
-  .allfoot .info{width:100%;padding:4rem}
+  .allfoot .info{width:100%;padding:6rem 4rem;font-size:2rem}
   .allfoot .info li{text-align:left;padding:0 0 0 14rem}
   .allfoot .info li:first-child{position:absolute;left:4rem;top:3rem;padding-left:0}
   .allfoot .info .img-profile{width:10rem;height:10rem}
