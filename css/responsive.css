@@ -39,7 +39,7 @@
 
   /* main */
   .main-visual .main-text{padding:0 6rem}
-  .main-visual .sub-title{left:6rem}
+  .main-visual .sub-title{left:6rem;bottom:6rem}
   .main-content .inr{width:100%;padding:0 6rem}
   .main-title{width:100% !important;margin-bottom:6rem}
   .main-content .main-title h2{word-break:break-all}
