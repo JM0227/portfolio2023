@@ -1,0 +1,191 @@
+@charset "utf-8";
+/* 
+   Responsive CSS Settings 
+*/
+
+/* animation */
+@-webkit-keyframes ani-allnav-in{ from {-webkit-transform:translateY(100%);transform:translateY(100%)} to {-webkit-transform:translateY(0);transform:translateY(0)} }
+@keyframes ani-allnav-in{ from {-webkit-transform:translateY(100%);transform:translateY(100%)} to {-webkit-transform:translateY(0);transform:translateY(0)} }
+@-webkit-keyframes ani-allnav-out{ from {-webkit-transform:translateY(0);transform:translateY(0)} to {-webkit-transform:translateY(-100%);transform:translateY(-100%)} }
+@keyframes ani-allnav-out{ from {-webkit-transform:translateY(0);transform:translateY(0)} to {-webkit-transform:translateY(-100%);transform:translateY(-100%)} }
+@-webkit-keyframes ani-allfoot-in{ from {-webkit-transform:translateY(-100%);transform:translateY(-100%)} to {-webkit-transform:translateY(0);transform:translateY(0)} }
+@keyframes ani-allfoot-in{ from {-webkit-transform:translateY(-100%);transform:translateY(-100%)} to {-webkit-transform:translateY(0);transform:translateY(0)} }
+@-webkit-keyframes ani-allfoot-out{ from {-webkit-transform:translateY(0);transform:translateY(0)} to {-webkit-transform:translateY(100%);transform:translateY(100%)} }
+@keyframes ani-allfoot-out{ from {-webkit-transform:translateY(0);transform:translateY(0)} to {-webkit-transform:translateY(100%);transform:translateY(100%)} }
+
+/* ---------------------------------------------------------------------------------------
+    01. PC ( ~1400px)
+--------------------------------------------------------------------------------------- */
+@media all and (max-width:1400px) { 
+  /* button */
+  .btn-top{right:6rem}
+
+  /* title */
+  .page-title{width:100%;padding:0 6rem}
+
+  /* layout */ 
+  #content .inr{width:100%;padding:0 6rem}
+
+  /* header */
+  #header .inr{padding:0 6rem}
+
+  /* footer */
+  #footer .inr{width:100%;padding:5.5rem 6rem}
+
+  /* allMenu */
+  .allmenu .allnav, .allmenu .allfoot{width:50%}
+  .allnav .nav-main{width:80%}
+  .allfoot .info{width:90%}
+
+  /* main */
+  .main-visual .main-text{padding:0 6rem}
+  .main-visual .sub-title{left:6rem}
+  .main-content .inr{width:100%;padding:0 6rem}
+  .main-title{width:100% !important;margin-bottom:6rem}
+  .main-content .main-title h2{word-break:break-all}
+  .profile-box .bubble span{width:100%}
+  .main-project .career-tree{width:100%;background-position:left top}
+  .career-tree .txt-year{width:20rem;padding:0 3rem 0 1.5rem;text-align:left}
+  .career-tree .txt-year::after{right:0}
+  .career-tree .career-item ul{width:calc(100% - 20rem);padding-left:3rem}
+  .swiper-btn-wrap{right:6rem}
+  .main-contact .form-mail{width:100%}
+
+  /* page1 - about me */
+  #content .area-about.profile .inr{padding:11rem 6rem 6rem 6rem;background-size:20%}
+  .strength-list li{width:calc(50% - 2rem);margin-bottom:2rem}
+  .skill-list li{width:calc(16.666% - 1.4rem)}
+  .area-about.experience .inr{-webkit-box-orient:vertical;-webkit-box-direction:normal;-ms-flex-flow:column;flex-flow:column}
+  .area-about.experience .page-subtit{width:100%}
+  .area-about.experience .career-tree{width:100%;background-position:left top}
+
+  /* page3 - resume */
+  .area-profile .box{width:100%}
+
+} 
+
+/* ---------------------------------------------------------------------------------------
+    02. 테블릿 세로 ( ~1024px)
+--------------------------------------------------------------------------------------- */
+@media all and (max-width:1024px) {
+  /* common */ 
+  html{font-size:52.5%}
+
+  /* layout */
+  .row-group .row.w50{width:100%}
+
+  /* main */
+  .swiper-btn-wrap{display:none}
+
+  /* page1 - about me */
+  .skill-list li{width:calc(25% - 1.4rem)}
+  .skill-list .skill-icon{padding:12rem 0 3rem 0}
+
+  /* page2 - works */
+  .work-list .list-item{width:calc(50% - 2.5rem)}
+  .work-summery{-webkit-box-orient:vertical;-webkit-box-direction:normal;-ms-flex-flow:column;flex-flow:column}
+  .work-summery .info{width:100%;padding:3rem 0}
+  .work-summery .img{width:100%}
+
+} 
+
+/* ---------------------------------------------------------------------------------------
+    03. 모바일 가로, 테블릿 세로 ( ~ 767px)
+--------------------------------------------------------------------------------------- */
+@media all and (max-width:767px) {
+  /* title */
+  .page-title{text-align:center}
+  .page-title h2{display:block;margin:0 0 1.8rem 0}
+  .page-title sub{display:block;padding:1.6rem 0 0 0}
+  .page-title sub::before{left:50%;top:0;bottom:unset;margin-left:-1rem;width:2rem}
+
+  /* button */
+  .btn-top{right:4rem}
+
+  /* title */
+  .page-title{padding:0 4rem}
+
+  /* layout */ 
+  #container{padding:0 0 27rem 0}
+  #content{padding:12rem 0 20rem 0}
+  #content .inr{padding:0 4rem}
+
+  /* header */
+  #header .inr{padding:0 4rem}
+  #gnb{display:none}
+
+  /* footer */
+  #footer .inr{-webkit-box-orient:vertical;-webkit-box-direction:normal;-ms-flex-flow:column;flex-flow:column;padding:5.5rem 4rem}
+  #footer .foot-left, #footer .foot-right{width:100%}
+  #footer .foot-info{padding-top:4rem;text-align:left}
+  #footer .foot-info li:nth-child(2){padding-left:0}
+
+  /* allMenu */
+  .allmenu .inr{-webkit-box-orient:vertical;-webkit-box-direction:normal;-ms-flex-direction:column;flex-direction:column;background:#fff}
+  .allmenu .allnav{width:100%;position:relative;height:auto}
+  .allnav .nav-main{width:100%;padding:6rem 4rem}
+  .allnav .nav-main li{padding-bottom:2rem}
+  .allnav .nav-main a{font-size:6rem}
+  .allmenu .allfoot{width:100%;position:relative;height:auto;margin-top:auto;-webkit-animation:ani-allnav-in 400ms 600ms cubic-bezier(.3,.73,.45,1) both;animation:ani-allnav-in 400ms 600ms cubic-bezier(.3,.73,.45,1) both}
+  .allfoot .info{width:100%;padding:4rem}
+  .allfoot .info li{text-align:left;padding:0 0 0 14rem}
+  .allfoot .info li:first-child{position:absolute;left:4rem;top:3rem;padding-left:0}
+  .allfoot .info .img-profile{width:10rem;height:10rem}
+  .allmenu.active .allfoot{-webkit-animation:ani-allnav-in 400ms 600ms cubic-bezier(.3,.73,.45,1) both;animation:ani-allnav-in 400ms 600ms cubic-bezier(.3,.73,.45,1) both}
+  .allmenu .btn-close{right:4rem}
+  .allmenu .btn-close::before, .allmenu .btn-close::after{background-color:#222}
+
+  /* main */
+  .main-visual .main-text{padding:0 4rem}
+  .main-visual .main-title{word-break:break-all}
+  .main-visual .sub-title{left:4rem}
+  .main-content .inr{padding:0 4rem}
+  .main-visual .sub-title p{width:50%}
+  .main-intro .profile-box{padding:0 0 28rem 0;background-position:center bottom;background-size:25rem}
+  .profile-box .bubble span::after{-webkit-transform:rotate(350deg);-ms-transform:rotate(350deg);transform:rotate(350deg)}
+
+  /* page1 - about me */
+  #content .area-about.profile .inr{padding:9rem 4rem 4rem 4rem}
+  .strength-list{margin-left:0}
+  .strength-list li{width:100%;margin:0 0 2rem 0}
+  .skill-level{position:relative;top:auto;left:auto;margin-top:2rem;text-align:right}
+
+  /* page2 - Works */
+  .work-list{margin-left:0}
+  .work-list .list-item{float:none;width:100%;margin:0;border-bottom:1px solid #000}
+  .work-list .list-item:first-child{border-top:1px solid #222}
+  .work-list .list-item a{display:-webkit-box;display:-ms-flexbox;display:flex;padding:1rem 0}
+  .work-list .list-item a img{width:14rem;height:14rem;margin:0 2rem 0 0;border-radius:1.4rem}
+  .work-list .list-item a:hover img{border-radius:1.4rem}
+  .work-list .list-item .info{display:-webkit-box;display:-ms-flexbox;display:flex;-webkit-box-orient:vertical;-webkit-box-direction:normal;-ms-flex-flow:column;flex-flow:column;-webkit-box-pack:justify;-ms-flex-pack:justify;justify-content:space-between;width:calc(100% - 16rem)}
+  .work-list .list-item .info::before, .work-list .list-item .info::after{display:none}
+  .work-list .list-item .info .title{overflow:inherit;white-space:inherit}
+
+  /* page3 -resume */
+  .career-list .txt-tit{max-width:100%;height:auto;white-space:wrap;word-break:keep-all}
+  .career-list .txt-date{display:none}
+
+  /* page4 - contact */
+  .area-contact{-webkit-box-orient:vertical;-webkit-box-direction:normal;-ms-flex-flow:column;flex-flow:column}
+  .area-contact .list-wrap, .area-contact .form-mail{width:100%}
+  .area-contact .list-wrap{margin-bottom:3rem}
+  .area-contact .contact-list li.title{text-align:left}
+} 
+
+/* ---------------------------------------------------------------------------------------
+    04. 모바일 가로, 테블릿 세로 ( ~ 575px)
+--------------------------------------------------------------------------------------- */
+@media all and (max-width:575px) {
+
+  /* main */
+  .main-visual .sub-title p:last-child{display:none}
+  .career-tree .career-item > li{-webkit-box-orient:vertical;-webkit-box-direction:normal;-ms-flex-flow:column;flex-flow:column}
+  .career-tree .txt-year{padding:0 0 0 3rem}
+  .career-tree .txt-year::after{right:auto;top:auto;left:3rem;bottom:-3rem}
+  .career-tree .career-item ul{width:100%;padding:3rem 0 0 3rem}
+
+  /* page1 - about me */
+  #content .area-about.profile .inr{background:none}
+  .skill-list li{width:calc(50% - 1.4rem)}
+
+}
