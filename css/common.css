@@ -309,6 +309,7 @@ h3.bd-line{margin-bottom:4rem;padding-bottom:1.8rem;border-bottom:0.1rem solid r
 .skill-list .skill-icon.skill14{background-image:url('../images/icon_skill14.png')}
 .skill-list .skill-icon.skill15{background-image:url('../images/icon_skill15.png')}
 .skill-list .skill-icon.skill16{background-image:url('../images/icon_skill16.png')}
+.skill-list .skill-icon.skill17{background-image:url('../images/icon_skill17.png')}
 .skill-list li:hover{-webkit-transition:all .2s;-o-transition:all .2s;transition:all .2s;-webkit-box-shadow:.2rem .2rem 1.5rem #cdcdcd;box-shadow:.2rem .2rem 1.5rem #cdcdcd}
 .skill-list li:hover .skill-icon{background-position:center -95px}
 .skill-level{position:absolute;right:0;top:2rem}
