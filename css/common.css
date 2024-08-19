@@ -289,7 +289,7 @@ h3.bd-line{margin-bottom:4rem;padding-bottom:1.8rem;border-bottom:0.1rem solid r
 .strength-list .cont{padding:2rem 2.4rem;font-size:1.6rem;line-height:1.5;word-break:keep-all}
 .area-about.skill{background:#f5f5f5}
 .skill-list::after{display:block;clear:both;content:''}
-.skill-list li{position:relative;float:left;width:calc(12.5% - 1.4rem);margin:0 0.7rem 1.4rem 0.7rem;border-radius:1rem;text-align:center;background:#fff;-webkit-transition:all .2s;-o-transition:all .2s;transition:all .2s}
+.skill-list li{position:relative;float:left;width:calc(14.28% - 1.4rem);margin:0 0.7rem 1.4rem 0.7rem;border-radius:1rem;text-align:center;background:#fff;-webkit-transition:all .2s;-o-transition:all .2s;transition:all .2s}
 .skill-list li.high::after{content:'';position:absolute;right:1.3rem;top:1.3rem;width:1.5rem;height:1.5rem;border-radius:50%;background:#230097}
 .skill-list li.middle::after{content:'';position:absolute;right:1.3rem;top:1.3rem;width:1.5rem;height:1.5rem;border-radius:50%;background:#3998ff}
 .skill-list li.low::after{content:'';position:absolute;right:1.3rem;top:1.3rem;width:1.5rem;height:1.5rem;border-radius:50%;background:#1ed7c3}
